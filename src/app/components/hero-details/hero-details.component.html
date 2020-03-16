@@ -1,0 +1,15 @@
+<div *ngIf="hero" class="m-3">
+
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>ID: </span>{{hero.id}}</div>
+    <div>
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input [(ngModel)]="hero.name" placeholder="name" id="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="description">Description: </label>
+            <input [(ngModel)]="hero.description" placeholder="description" id="description" class="form-control">
+        </div>
+    </div>
+</div>
